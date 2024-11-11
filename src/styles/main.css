@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  & div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+
+    & span {
+      font: var(--fw-md) var(--fs-md) / var(--lh-md) var(--ff-inter);
+    }
+  }
+}

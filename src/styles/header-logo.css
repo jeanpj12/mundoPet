@@ -1,0 +1,14 @@
+.container-logo {
+    width: 100%;
+    
+    .logo {
+        max-width: 9.56rem;
+        background-color: var(--background-tertiary);
+        padding: .75rem 1.25rem;
+        border-bottom-right-radius: .75rem;
+
+        img {
+            width: 100%;
+        }
+    }
+}
