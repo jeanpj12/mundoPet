@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Content */
+  --content-primary: #ffffff;
+  --content-secondary: #98959d;
+  --content-tertiary: #666666;
+  --content-brand: #9282fa;
+
+  /* Background */
+  --background-primary: #151515;
+  --background-secondary: #1e1e1e;
+  --background-tertiary: #23242c;
+  --background-brand: #9282fa;
+  --background-highlights: #bdb4fa;
+
+  /* Border */
+  --border-primary: #3e3c41;
+  --border-secondary: #86818c;
+  --border-brand: #9282fa;
+  --border-divisor: #353339;
+
+  /* Accent */
+  --accent-blue: #027df0;
+  --accent-blue-light: #16487a;
+  --accent-yellow: #f0dc02;
+  --accent-yellow-light: #756e1b;
+  --accent-orange: #f09102;
+  --accent-orange-light: #75501b;
+
+  /* Tipografy */
+
+  --ff-inter-tight: "Inter tight", sans-serif;
+  --ff-inter: "Inter", sans-serif;
+
+  --fs-sm: .75rem;
+  --fs-md: .875rem;
+  --fs-lg: 1rem;
+  --fs-xl: 1.5rem;
+
+  --fw-sm: 500;
+  --fw-md: 700;
+
+  --lh-sm: 1rem;
+  --lh-md: 1.5rem;
+  --lh-lg: 2rem;
+
+}
+
+body {
+    background-color: #14151D;
+    font: var(--fw-sm) var(--fs-md)/var(--lh-sm) var(--ff-inter);
+    color: var(--content-secondary);
+}
+
+main {
+    display: grid;
+    padding: .75rem 1.25rem;
+    margin-top: .625rem;
+}
+
+h1 {
+    font: var(--fw-md) var(--fs-xl)/var(--lh-lg) var(--ff-inter-tight);
+    color: var(--content-primary);
+}
