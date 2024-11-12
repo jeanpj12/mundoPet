@@ -1,5 +1,6 @@
 .container-logo {
     width: 100%;
+    position: relative;
     
     .logo {
         max-width: 9.56rem;
@@ -10,5 +11,11 @@
         img {
             width: 100%;
         }
+    }
+}
+
+@media (width >= 80rem) {
+    .container-logo {
+        position: absolute;
     }
 }

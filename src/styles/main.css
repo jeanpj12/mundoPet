@@ -2,8 +2,9 @@
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+  margin-top: .625rem;
 
-  & div {
+  div:nth-child(1) {
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
@@ -11,5 +12,13 @@
     & span {
       font: var(--fw-md) var(--fs-md) / var(--lh-md) var(--ff-inter);
     }
+  }
+
+}
+
+@media (width >= 80rem) {
+  .header {
+      flex-direction: row;
+      justify-content: space-between;
   }
 }

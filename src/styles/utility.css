@@ -1,4 +1,12 @@
 .container {
-    max-width: 21.875rem;
+    max-width: 100%;
     margin-inline: auto;
+    padding: .75rem 1.25rem;
+}
+
+@media (width >= 80rem) {
+    .container {
+        max-width: 54.43rem;
+        padding: 5rem;
+    }
 }
