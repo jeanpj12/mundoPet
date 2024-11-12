@@ -1,0 +1,79 @@
+.cards-schedules {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    margin-top: 2rem;
+    
+    .card-area {
+        background: var(--background-tertiary);
+        border-radius: .625rem;
+        overflow: hidden;
+
+        & header {
+            display: flex;
+            justify-content: space-between;
+            padding: .75rem 1.25rem;
+            border-bottom: 1px solid var(--border-primary);
+            align-items: center;
+
+            & div {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 1rem;
+
+                span {
+                    font: var(--fw-md) var(--fs-md)/var(--lh-md) var(--ff-inter);
+                    color: var(--content-primary);
+                }
+            }
+        }
+
+        & .schedules-area {
+            padding: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            /* gap: 1.25rem; */
+
+            & .schedule-item:has(+ .schedule-item) {
+                border-bottom: 1px solid var(--border-primary);;
+            }
+
+            & .schedule-item {
+                display: flex;
+                justify-content: space-between;
+                gap: 1rem;
+                padding-block: 1.25rem;
+
+                & div {
+                    flex: 1;
+                }
+
+                .hour {
+                    margin-right: 1rem;
+                }
+
+                .hour, .pet-name {
+                    font: var(--fw-md) var(--fs-md)/var(--lh-sm) var(--ff-inter);
+                    color: var(--content-primary);
+                }
+                .service {
+                    text-align: left;
+                    flex: 1;
+                }
+
+                .remove {
+                    color: var(--content-tertiary);
+                    font: var(--fw-sm) var(--fs-sm)/var(--lh-sm) var(--ff-inter);
+                    cursor: pointer;
+                    transition: text-decoration 300ms linear, color 300ms;
+
+                    &:hover {
+                        text-decoration: underline;
+                        color: var(--content-primary);
+                    }
+                }
+            }
+        }
+    }
+}
