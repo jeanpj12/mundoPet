@@ -39,8 +39,8 @@
   --ff-inter-tight: "Inter tight", sans-serif;
   --ff-inter: "Inter", sans-serif;
 
-  --fs-sm: .75rem;
-  --fs-md: .875rem;
+  --fs-sm: 0.75rem;
+  --fs-md: 0.875rem;
   --fs-lg: 1rem;
   --fs-xl: 1.5rem;
 
@@ -50,16 +50,22 @@
   --lh-sm: 1rem;
   --lh-md: 1.5rem;
   --lh-lg: 2rem;
-
 }
 
 body {
-    background-color: #14151D;
-    font: var(--fw-sm) var(--fs-md)/var(--lh-sm) var(--ff-inter);
-    color: var(--content-secondary);
+  background-color: #14151d;
+  font: var(--fw-sm) var(--fs-md) / var(--lh-sm) var(--ff-inter);
+  color: var(--content-secondary);
+  overflow: initial;
 }
 
 h1 {
-    font: var(--fw-md) var(--fs-xl)/var(--lh-lg) var(--ff-inter-tight);
-    color: var(--content-primary);
+  font: var(--fw-md) var(--fs-xl) / var(--lh-lg) var(--ff-inter-tight);
+  color: var(--content-primary);
+}
+
+@media (width > 80em) {
+  body {
+    /* overflow: hidden; */
+  }
 }

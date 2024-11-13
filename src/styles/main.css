@@ -13,12 +13,28 @@
       font: var(--fw-md) var(--fs-md) / var(--lh-md) var(--ff-inter);
     }
   }
+}
 
+.add-schedule {
+  background-color: var(--background-tertiary);
+  width: 100%;
+  padding-block: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
 }
 
 @media (width >= 80rem) {
   .header {
       flex-direction: row;
       justify-content: space-between;
+  }
+
+  .add-schedule {
+    background-color: transparent;
+    justify-content: flex-end;
+    right: 1.875rem;
   }
 }

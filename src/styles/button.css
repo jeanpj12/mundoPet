@@ -1,0 +1,18 @@
+button {
+    text-transform: uppercase;
+    padding: .75rem 1.5rem;
+    border-radius: .5rem;
+    background-color: var(--background-brand);
+    color: var(--background-primary);
+    font-weight: var(--fw-md);
+    font-size: var(--fs-lg);
+    border: none;
+    box-shadow: 0 0 40px 0 rgba(146, 130, 250, .3);
+    cursor: pointer;
+    transition: scale 300ms;
+
+    &:hover {
+        background-color: var(--background-highlights);
+        scale: 1.05;
+    }
+}
