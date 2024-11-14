@@ -138,13 +138,12 @@
       </div>
 
       <div class="add-schedule">
-        <button>
-          Novo agendamento
-        </button>
+        <button>Novo agendamento</button>
       </div>
-
-      <div class="popup-area active">
-        <div class="container">
+    </main>
+    <div class="popup-area active">
+      <div class="container">
+        <div class="popup-wrapper">
           <div class="header">
             <div>
               <h1>Agende um atendimento</h1>
@@ -156,18 +155,45 @@
 
           <form>
             <label for="tutor-name">Nome do tutor</label>
-            <input type="text" name="tutor-name" id="tutor-name">
+            <input
+              type="text"
+              name="tutor-name"
+              id="tutor-name"
+              placeholder="Helena Souza"
+            />
 
             <label for="pet-name">Nome do pet</label>
-            <input type="text" name="pet-name" id="pet-name">
+            <input
+              type="text"
+              name="pet-name"
+              id="pet-name"
+              placeholder="Cheddar"
+            />
 
             <label for="telephone">Telefone</label>
-            <input type="text" name="telephone" id="telephone">
+            <input
+              type="text"
+              name="telephone"
+              id="telephone"
+              placeholder="(00) 0 0000-0000"
+            />
 
             <label for="service-description">DEscrição do serviço</label>
+            <textarea
+              name="service-description"
+              id="service-description"
+              placeholder="Banho e tosa"
+            ></textarea>
+
+            <label for="date">Data</label>
+            <input type="date" name="date" id="date" />
+
+            <label for="hour">Hora</label>
+            <input type="time" />
           </form>
+          <button>Agendar</button>
         </div>
       </div>
-    </main>
+    </div>
   </body>
 </html>
