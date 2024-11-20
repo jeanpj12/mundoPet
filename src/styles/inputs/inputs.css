@@ -1,0 +1,25 @@
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+
+    input, textarea {
+        max-width: 100%;
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        color: var(--content-secondary);
+        font: var(--fw-md) var(--fs-md) / var(--lh-md) var(--ff-inter);
+        outline: 2px solid var(--border-primary);
+        border-radius: 0.5rem;
+        padding: 0.75rem;
+
+        &:hover {
+            outline-color: var(--border-secondary);
+        }
+
+        &:focus {
+            outline-color: var( --border-brand);
+        }
+    }
+}

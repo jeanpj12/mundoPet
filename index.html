@@ -1,199 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mundo Pet</title>
-    <script src="src/main.js" type="module" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header class="container-logo">
-      <div class="logo">
-        <img src="./src/assets/images/Logo.svg" alt="" />
-      </div>
-    </header>
 
-    <main>
-      <div class="container">
-        <div class="header">
-          <div>
-            <h1>Sua agenda</h1>
-            <span
-              >Aqui você ver todos os clientes e serviços agendados hoje.</span
-            >
-          </div>
-          <div class="input-date">
-            <img
-              src="./src/assets/icons/Calendar-Minimalistic--Streamline-Solar.svg"
-              alt=""
-            />
-            <input type="date" name="date" id="date" />
-            <img src="./src/assets/icons/Icon.svg" alt="" />
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mundo Pet</title>
+  <script src="src/main.js" type="module" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header class="container-logo">
+    <div class="logo">
+      <img src="./src/assets/images/Logo.svg" alt="" />
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="header">
+        <div>
+          <h1>Sua agenda</h1>
+          <span>Aqui você ver todos os clientes e serviços agendados hoje.</span>
         </div>
-        <div class="cards-schedules">
-          <div class="card-area" id="morning">
-            <header>
-              <div>
-                <img src="./src/assets/icons/Sun-Fog--Streamline-Solar.svg" />
-                <span>Manhã</span>
-              </div>
-              <strong class="times-between"> 09-12h </strong>
-            </header>
-            <div class="schedules-area">
-              <div class="schedule-item">
-                <div>
-                  <strong class="hour">09:00</strong>
-                  <span class="pet-name">Thor</span>
-                  <span class="client-name">/ Fernanda</span>
-                </div>
-
-                <span class="service"> Vacinação </span>
-
-                <span class="remove">Remover agendamento</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="card-area" id="afternoon">
-            <header>
-              <div>
-                <img
-                  src="./src/assets/icons/Cloud-Sun-4--Streamline-Solar.svg"
-                />
-                <span>Tarde</span>
-              </div>
-              <strong class="times-between"> 09-12h </strong>
-            </header>
-            <div class="schedules-area">
-              <div class="schedule-item">
-                <div>
-                  <strong class="hour">13:00</strong>
-                  <span class="pet-name">Mel</span>
-                  <span class="client-name">/ João Souza</span>
-                </div>
-
-                <span class="service"> Corte de Unhas </span>
-
-                <span class="remove">Remover agendamento</span>
-              </div>
-
-              <div class="schedule-item">
-                <div>
-                  <strong class="hour">14:00</strong>
-                  <span class="pet-name">Bella</span>
-                  <span class="client-name">/ Pedro Martins</span>
-                </div>
-
-                <span class="service"> Aplicação de Anti-pulgas </span>
-
-                <span class="remove">Remover agendamento</span>
-              </div>
-
-              <div class="schedule-item">
-                <div>
-                  <strong class="hour">15:00</strong>
-                  <span class="pet-name">Simba</span>
-                  <span class="client-name">/ Juliana Rocha</span>
-                </div>
-
-                <span class="service"> Tosa higiênica </span>
-
-                <span class="remove">Remover agendamento</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="card-area" id="night">
-            <header>
-              <div>
-                <img
-                  src="./src/assets/icons/Moon-Stars--Streamline-Solar.svg"
-                />
-                <span>Noite</span>
-              </div>
-              <strong class="times-between"> 09-12h </strong>
-            </header>
-            <div class="schedules-area">
-              <div class="schedule-item">
-                <div>
-                  <strong class="hour">20:00</strong>
-                  <span class="pet-name">Max</span>
-                  <span class="client-name">/ Camila Santos</span>
-                </div>
-
-                <span class="service"> Limpesa de Dentes </span>
-
-                <span class="remove">Remover agendamento</span>
-              </div>
-            </div>
-          </div>
+        <div class="input-date">
+          <img src="./src/assets/icons/Calendar-Minimalistic--Streamline-Solar.svg" alt="" />
+          <input type="date" name="date" id="date" />
+          <img src="./src/assets/icons/Icon.svg" alt="" />
         </div>
       </div>
-
-      <div class="add-schedule">
-        <button>Novo agendamento</button>
-      </div>
-    </main>
-    <div class="popup-area active">
-      <div class="container">
-        <div class="popup-wrapper">
-          <div class="header">
+      <div class="cards-schedules">
+        <div class="card-area" id="morning">
+          <header>
             <div>
-              <h1>Agende um atendimento</h1>
-              <span
-                >Preencha os dados do cliente para realizar o agendamento:</span
-              >
+              <img src="./src/assets/icons/Sun-Fog--Streamline-Solar.svg" />
+              <span>Manhã</span>
+            </div>
+            <strong class="times-between"> 09-12h </strong>
+          </header>
+          <div class="schedules-area">
+            <div class="schedule-item">
+              <div>
+                <strong class="hour">09:00</strong>
+                <span class="pet-name">Thor</span>
+                <span class="client-name">/ Fernanda</span>
+              </div>
+
+              <span class="service"> Vacinação </span>
+
+              <span class="remove">Remover agendamento</span>
             </div>
           </div>
+        </div>
 
-          <form>
-            <label for="tutor-name">Nome do tutor</label>
-            <input
-              type="text"
-              name="tutor-name"
-              id="tutor-name"
-              placeholder="Helena Souza"
-            />
+        <div class="card-area" id="afternoon">
+          <header>
+            <div>
+              <img src="./src/assets/icons/Cloud-Sun-4--Streamline-Solar.svg" />
+              <span>Tarde</span>
+            </div>
+            <strong class="times-between"> 09-12h </strong>
+          </header>
+          <div class="schedules-area">
+            <div class="schedule-item">
+              <div>
+                <strong class="hour">13:00</strong>
+                <span class="pet-name">Mel</span>
+                <span class="client-name">/ João Souza</span>
+              </div>
 
-            <label for="pet-name">Nome do pet</label>
-            <input
-              type="text"
-              name="pet-name"
-              id="pet-name"
-              placeholder="Cheddar"
-            />
+              <span class="service"> Corte de Unhas </span>
 
-            <label for="telephone">Telefone</label>
-            <input
-              type="text"
-              name="telephone"
-              id="telephone"
-              placeholder="(00) 0 0000-0000"
-            />
+              <span class="remove">Remover agendamento</span>
+            </div>
 
-            <label for="service-description">DEscrição do serviço</label>
-            <textarea
-              name="service-description"
-              id="service-description"
-              placeholder="Banho e tosa"
-            ></textarea>
+            <div class="schedule-item">
+              <div>
+                <strong class="hour">14:00</strong>
+                <span class="pet-name">Bella</span>
+                <span class="client-name">/ Pedro Martins</span>
+              </div>
 
-            <label for="date">Data</label>
-            <input type="date" name="date" id="date" />
+              <span class="service"> Aplicação de Anti-pulgas </span>
 
-            <label for="hour">Hora</label>
-            <input type="time" />
-          </form>
-          <button>Agendar</button>
+              <span class="remove">Remover agendamento</span>
+            </div>
+
+            <div class="schedule-item">
+              <div>
+                <strong class="hour">15:00</strong>
+                <span class="pet-name">Simba</span>
+                <span class="client-name">/ Juliana Rocha</span>
+              </div>
+
+              <span class="service"> Tosa higiênica </span>
+
+              <span class="remove">Remover agendamento</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-area" id="night">
+          <header>
+            <div>
+              <img src="./src/assets/icons/Moon-Stars--Streamline-Solar.svg" />
+              <span>Noite</span>
+            </div>
+            <strong class="times-between"> 09-12h </strong>
+          </header>
+          <div class="schedules-area">
+            <div class="schedule-item">
+              <div>
+                <strong class="hour">20:00</strong>
+                <span class="pet-name">Max</span>
+                <span class="client-name">/ Camila Santos</span>
+              </div>
+
+              <span class="service"> Limpesa de Dentes </span>
+
+              <span class="remove">Remover agendamento</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </body>
+
+    <div class="add-schedule">
+      <button>Novo agendamento</button>
+    </div>
+  </main>
+  <div class="popup-area active">
+    <div class="container">
+      <div class="popup-wrapper">
+        <img src="./src/assets/icons/Close-Small-Fill--Streamline-Rounded-Fill---Material-Symbols.svg" id="close-pop-up">
+        <div class="header">
+          <div>
+            <h1>Agende um atendimento</h1>
+            <span>Preencha os dados do cliente para realizar o agendamento:</span>
+          </div>
+        </div>
+
+        <form>
+
+          <div class="input-wrapper">
+            <label for="tutor-name">Nome do tutor</label>
+            <input type="text" name="tutor-name" id="tutor-name" placeholder="Helena Souza" />
+          </div>
+          <div class="input-wrapper">
+            <label for="pet-name">Nome do pet</label>
+            <input type="text" name="pet-name" id="pet-name" placeholder="Cheddar" />
+          </div>
+          <div class="input-wrapper">
+            <label for="telephone">Telefone</label>
+            <input type="text" name="telephone" id="telephone" placeholder="(00) 0 0000-0000" />
+          </div>
+          <div class="input-wrapper">
+            <label for="service-description">Descrição do serviço</label>
+            <textarea name="service-description" id="service-description" placeholder="Banho e tosa"></textarea>
+          </div>
+          <div class="input-wrapper">
+            <label for="date-schedule">Data</label>
+            <div class="input-date">
+            <img src="./src/assets/icons/Calendar-Minimalistic--Streamline-Solar.svg" alt="" />
+            <input type="date" name="date-schedule" id="date-schedule" />
+            <img src="./src/assets/icons/Icon.svg" alt="" />
+            </div>
+          </div>
+          <div class="input-wrapper">
+            <label for="hour">Hora</label>
+            <div class="input-time">
+              <img src="./src/assets/icons/Clock-Circle--Streamline-Solar.svg" alt="" />
+              <input type="time" />
+              <img src="./src/assets/icons/Icon.svg" alt="" />
+            </div>
+          </div>
+        </form>
+        <button>Agendar</button>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
