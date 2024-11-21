@@ -1,3 +1,10 @@
 {
-    "schedules": []
+    "schedules": [
+        {
+          "clientName": "Fernanda",
+          "petName": "Thor",
+          "service": "Vacinação",
+          "when": "Thu Nov 21 2024 11:00:00 GMT-0300 (Brasilia Standard Time)"
+        }
+      ]
 }

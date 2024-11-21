@@ -3,8 +3,7 @@
     inset: 0;
     z-index: 100;
     display: none;
-
-    
+      
     .popup-wrapper {
         width: 100%;
         background: var(--background-tertiary);
@@ -29,13 +28,43 @@
             gap: 1rem;
         }
     }
+
+    .input-date {
+        max-width: 100%;
+    }
 }
 
 .active {
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: open-pop-up 300ms ease-in-out;
 }
+
+@keyframes close-pop-up {
+    0% {
+        scale: 1;
+    }
+
+    100% {
+        scale: 0;
+    }
+}
+
+
+@keyframes open-pop-up {
+    0% {
+        scale: 0.5;
+    }
+    50% {
+        scale: 1.1;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
+
 
 @media (width > 80em) {
     #close-pop-up {

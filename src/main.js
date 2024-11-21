@@ -14,3 +14,4 @@ import "./styles/popup/pop-up.css"
 
 import "./modules/pop-up.js"
 import "./modules/newSchedule.js"
+import "./modules/page-load.js"

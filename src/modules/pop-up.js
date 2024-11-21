@@ -1,3 +1,5 @@
+import dayjs from "dayjs";
+
 const addNewScheduleButton = document.querySelector(".add-schedule");
 const popUp = document.querySelector("#pop-up");
 const mainSelector = document.querySelector("main");
@@ -16,7 +18,6 @@ function handlePopUpState() {
 }
 
 export function togglePopUp() {
-    console.log("Toggle PopUP");
     popUp.classList.toggle("active");
     handlePopUpState();
   }
