@@ -4,6 +4,8 @@ const addNewScheduleButton = document.querySelector(".add-schedule");
 const popUp = document.querySelector("#pop-up");
 const mainSelector = document.querySelector("main");
 const popUpWrapper = document.querySelector(".popup-wrapper");
+const closePopUp = document.getElementById("close-pop-up")
+
 
 function handlePopUpState() {
   if (popUp.classList.contains("active")) {
@@ -31,3 +33,7 @@ popUp.addEventListener("click", (e) => {
 popUpWrapper.addEventListener("click", (e) => {
   e.stopPropagation();
 });
+
+closePopUp.addEventListener("click", () => {
+  togglePopUp()
+})

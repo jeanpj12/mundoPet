@@ -20,6 +20,7 @@
             height: 2.25rem;
             top: 1rem;
             right: 1rem;
+            cursor: pointer;
         }
 
         & form {
