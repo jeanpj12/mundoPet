@@ -41,7 +41,6 @@ export function showSchedules({dailySchedules}) {
         scheduleItem.append(clientWrapper, service, remove)
 
         const hour = dayjs(schedule.when).hour()
-        console.log(hour)
 
         if(hour <= 12) {
             schedulesMorning.appendChild(scheduleItem)

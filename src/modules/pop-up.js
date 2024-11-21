@@ -6,6 +6,7 @@ const mainSelector = document.querySelector("main");
 const popUpWrapper = document.querySelector(".popup-wrapper");
 const closePopUp = document.getElementById("close-pop-up")
 
+handlePopUpState()
 
 function handlePopUpState() {
   if (popUp.classList.contains("active")) {
